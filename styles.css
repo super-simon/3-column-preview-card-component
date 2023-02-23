@@ -1,0 +1,114 @@
+html {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 307px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+.card__header {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin: 35px 0 0 0;
+}
+.card__description {
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin: 25px 0 0 0;
+  min-height: 208px;
+}
+.card__link--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card__link {
+  padding: 11px 31.5px 12px 31.5px;
+  display: inline-block;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.sedans {
+  background-color: #e28625;
+}
+.sedans .card__link {
+  color: #e28625;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+.sedans .card__link:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.suvs {
+  background-color: #006971;
+}
+.suvs .card__link {
+  color: #006971;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+.suvs .card__link:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.luxury {
+  background-color: #004140;
+}
+.luxury .card__link {
+  color: #004140;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+.luxury .card__link:hover {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 613px) {
+  .card {
+    width: 327px;
+  }
+  .card__description {
+    min-height: 150px;
+  }
+}/*# sourceMappingURL=styles.css.map */
